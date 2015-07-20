@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "lights.msm8974"
+#define LOG_TAG "lights.msm8994"
 
 #include <cutils/log.h>
 #include <stdint.h>
@@ -414,7 +414,7 @@ struct hw_module_t HAL_MODULE_INFO_SYM = {
 	.version_major = 1,
 	.version_minor = 0,
 	.id = LIGHTS_HARDWARE_MODULE_ID,
-	.name = "Sony MSM8974 lights module",
+	.name = "Sony MSM8994 lights module",
 	.author = "Bjorn Andersson <bjorn.andersson@sonymobile.com>, Chirayu Desai <cdesai@cyanogenmod.org>",
 	.methods = &lights_module_methods,
 };

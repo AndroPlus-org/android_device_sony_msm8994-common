@@ -19,20 +19,20 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/sony/msm8974
+TARGET_KERNEL_SOURCE := kernel/sony/MSM8994
 
 # use CAF variants
 BOARD_USES_QCOM_HARDWARE := true
 
 # Platform
-TARGET_BOOTLOADER_BOARD_NAME := MSM8974
-TARGET_BOARD_PLATFORM := msm8974
+TARGET_BOOTLOADER_BOARD_NAME := msm8994
+TARGET_BOARD_PLATFORM := msm8994
 
 # Architecture
-TARGET_ARCH := arm
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH := arm64
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 := armeabi-v7a
+TARGET_ARCH_VARIANT := arm64-v8a
 TARGET_CPU_VARIANT := krait
 
 # Audio
@@ -47,7 +47,7 @@ BOARD_HAVE_BLUETOOTH := true
 TARGET_PROVIDES_CAMERA_HAL := true
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += device/sony/msm8974-common/cmhw
+BOARD_HARDWARE_CLASS += device/sony/msm8994-common/cmhw
 
 # Font
 EXTENDED_FONT_FOOTPRINT := true
@@ -72,7 +72,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8994-common/boot/custombootimg.mk
 
 # Lights HAL
 TARGET_PROVIDES_LIBLIGHT := true
@@ -86,13 +86,13 @@ CM_POWERHAL_EXTENSION := qcom
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
-BOARD_RIL_CLASS := ../../../device/sony/msm8974-common/ril/
+BOARD_RIL_CLASS := ../../../device/sony/msm8994-common/ril/
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/sony/msm8974-common/sepolicy
+    device/sony/msm8994-common/sepolicy
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \

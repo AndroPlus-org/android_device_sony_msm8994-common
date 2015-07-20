@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := device/sony/msm8974-common
+COMMON_PATH := device/sony/msm8994-common
 
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
-    audio.primary.msm8974 \
+    audio.primary.msm8994 \
     audio.r_submix.default \
     audio.usb.default \
-    audio_policy.msm8974
+    audio_policy.msm8994
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
@@ -47,10 +47,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    hwcomposer.msm8974 \
-    gralloc.msm8974 \
-    copybit.msm8974 \
-    memtrack.msm8974 \
+    hwcomposer.msm8994 \
+    gralloc.msm8994 \
+    copybit.msm8994 \
+    memtrack.msm8994 \
     libgenlock \
     libmemalloc \
     liboverlay \
@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8974
+    lights.msm8994
 
 # Media profile
 PRODUCT_COPY_FILES += \
@@ -148,4 +148,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
 # Include non-opensource parts
-$(call inherit-product, vendor/sony/msm8974-common/msm8974-common-vendor.mk)
+$(call inherit-product, vendor/sony/msm8994-common/msm8994-common-vendor.mk)
